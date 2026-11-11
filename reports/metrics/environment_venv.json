@@ -1,0 +1,48 @@
+{
+  "collected_at_utc": "2026-11-09T20:37:44.399292+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": {
+    "version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Nocomp\\Desktop\\CV statya\\.venv\\Scripts\\python.exe"
+  },
+  "libraries": {
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "ultralytics": "8.3.239",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.1",
+    "seaborn": "0.13.2",
+    "yaml": "6.0.2"
+  },
+  "pytorch": {
+    "available": true,
+    "torch_cuda_build": "12.8",
+    "cuda_available": true,
+    "device_count": 1,
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+        "memory_gib": 8.0,
+        "compute_capability": "8.9"
+      }
+    ]
+  },
+  "nvidia_smi": {
+    "available": true,
+    "cuda_umd_version": "13.4",
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+        "memory_mib": "8188",
+        "driver_version": "617.42"
+      }
+    ]
+  },
+  "required_packages_missing": [],
+  "training_readiness": {
+    "gpu_acceleration_available": true,
+    "assessment": "GPU acceleration is available; verify free VRAM before training."
+  }
+}

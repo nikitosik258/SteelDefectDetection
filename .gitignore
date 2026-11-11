@@ -1,0 +1,45 @@
+# Python environments, bytecode and caches
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+*.cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local temporary and intermediate data
+.tmp/
+tmp/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+runs/*
+!runs/.gitkeep
+
+# Pretrained checkpoints, trained weights and exported large models
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.torchscript
+
+# Temporary LaTeX build artefacts (final article files remain trackable)
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out
+
+# Credentials and local editor settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/

@@ -1,0 +1,67 @@
+# Fixed research protocol for E1--E4. Do not tune per architecture.
+common:
+  task: detect
+  data: configs/data.yaml
+  epochs: 100
+  patience: 20
+  batch: 16
+  imgsz: 320
+  optimizer: AdamW
+  lr0: 0.001
+  lrf: 0.01
+  weight_decay: 0.0005
+  cos_lr: false
+  warmup_epochs: 3
+  seed: 42
+  deterministic: true
+  pretrained: true
+  multi_scale: false  # Protocol requested 0.0; Ultralytics expects a Boolean.
+  close_mosaic: 0
+  device: 0
+  workers: 2  # Conservative Windows setting.
+  amp: true
+  save: true
+  val: true
+  plots: true
+
+augmentation_profiles:
+  baseline:
+    hsv_h: 0.0
+    hsv_s: 0.0
+    hsv_v: 0.0
+    degrees: 0.0
+    translate: 0.0
+    scale: 0.0
+    shear: 0.0
+    perspective: 0.0
+    fliplr: 0.0
+    flipud: 0.0
+    mosaic: 0.0
+    mixup: 0.0
+    cutmix: 0.0
+    copy_paste: 0.0
+    erasing: 0.0
+    bgr: 0.0
+  augmented:
+    hsv_h: 0.0
+    hsv_s: 0.0
+    hsv_v: 0.10
+    degrees: 5.0
+    translate: 0.05
+    scale: 0.10
+    shear: 0.0
+    perspective: 0.0
+    fliplr: 0.5
+    flipud: 0.5
+    mosaic: 0.0
+    mixup: 0.0
+    cutmix: 0.0
+    copy_paste: 0.0
+    erasing: 0.0
+    bgr: 0.0
+
+experiments:
+  E1: {model: yolov8n.pt, profile: baseline}
+  E2: {model: yolo11n.pt, profile: baseline}
+  E3: {model: yolov8n.pt, profile: augmented}
+  E4: {model: yolo11n.pt, profile: augmented}

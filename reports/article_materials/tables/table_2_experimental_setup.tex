@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Конфигурации экспериментов. Общее: imgsz=320 px; batch=16; AdamW; lr0=0.001; weight decay=0.0005; epochs=100; patience=20; seed=42; AMP; mosaic/mixup/cutmix=0.}
+\label{tab:setup}
+\scriptsize
+\begin{tabular}{lll p{0.42\textwidth}}
+\hline
+Эксперимент & Архитектура & Профиль & Умеренные аугментации \\
+\hline
+E1 & yolov8n.pt & baseline & нет \\
+E2 & yolo11n.pt & baseline & нет \\
+E3 & yolov8n.pt & augmented & flip H/V=0.5; rot.=5; tr.=0.05; sc.=0.10; HSV-V=0.10 \\
+E4 & yolo11n.pt & augmented & flip H/V=0.5; rot.=5; tr.=0.05; sc.=0.10; HSV-V=0.10 \\
+\hline
+\end{tabular}
+\end{table*}

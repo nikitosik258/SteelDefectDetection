@@ -1,0 +1,81 @@
+{
+  "seed": 42,
+  "source_image": "C:\\Users\\Nocomp\\Desktop\\CV statya\\data\\processed\\images\\train\\crazing_10.jpg",
+  "baseline_transforms": [
+    "Compose",
+    "MixUp",
+    "CutMix",
+    "IdentityAlbumentations",
+    "RandomHSV",
+    "RandomFlip",
+    "RandomFlip",
+    "Format"
+  ],
+  "augmented_transforms": [
+    "Compose",
+    "MixUp",
+    "CutMix",
+    "IdentityAlbumentations",
+    "RandomHSV",
+    "RandomFlip",
+    "RandomFlip",
+    "Format"
+  ],
+  "implicit_albumentations_replaced": true,
+  "baseline_is_deterministic": true,
+  "augmented_changes_image": true,
+  "baseline_boxes": 2,
+  "augmented_boxes": 2,
+  "visual_examples": [
+    {
+      "index": 0,
+      "source_image": "crazing_10.jpg",
+      "boxes_before": 2,
+      "boxes_after": 2,
+      "classes_before": [
+        "crazing",
+        "crazing"
+      ],
+      "classes_after": [
+        "crazing",
+        "crazing"
+      ]
+    },
+    {
+      "index": 250,
+      "source_image": "inclusion_160.jpg",
+      "boxes_before": 2,
+      "boxes_after": 2,
+      "classes_before": [
+        "inclusion",
+        "inclusion"
+      ],
+      "classes_after": [
+        "inclusion",
+        "inclusion"
+      ]
+    },
+    {
+      "index": 500,
+      "source_image": "patches_217.jpg",
+      "boxes_before": 6,
+      "boxes_after": 6,
+      "classes_before": [
+        "patches",
+        "patches",
+        "patches",
+        "patches",
+        "patches",
+        "patches"
+      ],
+      "classes_after": [
+        "patches",
+        "patches",
+        "patches",
+        "patches",
+        "patches",
+        "patches"
+      ]
+    }
+  ]
+}

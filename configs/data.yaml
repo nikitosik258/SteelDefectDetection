@@ -1,0 +1,13 @@
+# Paths are relative to this config file and portable across Windows/Linux.
+path: ../data/processed
+train: images/train
+val: images/val
+test: images/test
+nc: 6
+names:
+- crazing
+- inclusion
+- patches
+- pitted_surface
+- rolled-in_scale
+- scratches

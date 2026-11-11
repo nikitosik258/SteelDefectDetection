@@ -1,0 +1,7 @@
+metric,value,unit
+images,1800.000000,images
+annotated_objects,4189.000000,objects
+images_with_multiple_objects,1317.000000,images
+images_with_multiple_classes,123.000000,images
+small_objects_under_1pct_image_area,50.000000,objects
+small_object_threshold,1.000000,% of image area

@@ -1,0 +1,213 @@
+{
+  "generated_at_utc": "2026-11-10T13:47:16.773091+00:00",
+  "evaluation_split": "val",
+  "test_used": false,
+  "augmented_experiments": [
+    {
+      "experiment": "E3",
+      "model": "yolov8n.pt",
+      "profile": "augmented",
+      "status": "completed",
+      "actual_epochs": 100,
+      "best_epoch": 97,
+      "training_history_duration_seconds": 43769.8,
+      "median_epoch_seconds": 5.275000000000034,
+      "max_recorded_interepoch_gap_seconds": 39497.670000000006,
+      "history_has_wall_clock_gap": true,
+      "history_has_nan_or_inf": false,
+      "training_history_best_validation": {
+        "metrics/precision(B)": 0.73404,
+        "metrics/recall(B)": 0.72239,
+        "metrics/mAP50(B)": 0.73721,
+        "metrics/mAP50-95(B)": 0.39701
+      },
+      "loss_at_best_epoch": {
+        "train/box_loss": 0.90906,
+        "train/cls_loss": 0.58915,
+        "train/dfl_loss": 1.09395,
+        "val/box_loss": 1.68811,
+        "val/cls_loss": 1.17541,
+        "val/dfl_loss": 1.61444
+      },
+      "final_epoch_validation": {
+        "metrics/precision(B)": 0.69375,
+        "metrics/recall(B)": 0.73348,
+        "metrics/mAP50(B)": 0.72601,
+        "metrics/mAP50-95(B)": 0.39121
+      },
+      "possible_overfitting_indicator": true,
+      "artifacts": {
+        "best.pt": "runs/E3/weights/best.pt",
+        "last.pt": "runs/E3/weights/last.pt",
+        "results.csv": "runs/E3/results.csv",
+        "args.yaml": "runs/E3/args.yaml",
+        "effective_config.yaml": "runs/E3/effective_config.yaml",
+        "status.json": "runs/E3/status.json"
+      },
+      "best_checkpoint_validation": {
+        "checkpoint": "runs/E3/weights/best.pt",
+        "weights_finite": true,
+        "split": "val",
+        "precision": 0.7320954074256889,
+        "recall": 0.7239746323154074,
+        "map50": 0.7373929080212996,
+        "map50_95": 0.39696824822536764,
+        "speed_ms_per_image": {
+          "preprocess": 0.3942273147846141,
+          "inference": 1.9618712960638935,
+          "loss": 0.00025879651527955296,
+          "postprocess": 0.6438412038497281
+        }
+      },
+      "effective_config": {
+        "data": "configs/data.yaml",
+        "epochs": 100,
+        "patience": 20,
+        "batch": 16,
+        "imgsz": 320,
+        "optimizer": "AdamW",
+        "lr0": 0.001,
+        "lrf": 0.01,
+        "weight_decay": 0.0005,
+        "cos_lr": false,
+        "warmup_epochs": 3,
+        "seed": 42,
+        "deterministic": true,
+        "pretrained": true,
+        "multi_scale": false,
+        "close_mosaic": 0,
+        "hsv_h": 0.0,
+        "hsv_s": 0.0,
+        "hsv_v": 0.1,
+        "degrees": 5.0,
+        "translate": 0.05,
+        "scale": 0.1,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "fliplr": 0.5,
+        "flipud": 0.5,
+        "mosaic": 0.0,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "erasing": 0.0,
+        "bgr": 0.0
+      }
+    },
+    {
+      "experiment": "E4",
+      "model": "yolo11n.pt",
+      "profile": "augmented",
+      "status": "completed",
+      "actual_epochs": 95,
+      "best_epoch": 75,
+      "training_history_duration_seconds": 585.469,
+      "median_epoch_seconds": 6.032500000000006,
+      "max_recorded_interepoch_gap_seconds": 7.347000000000008,
+      "history_has_wall_clock_gap": false,
+      "history_has_nan_or_inf": false,
+      "training_history_best_validation": {
+        "metrics/precision(B)": 0.73421,
+        "metrics/recall(B)": 0.715,
+        "metrics/mAP50(B)": 0.74825,
+        "metrics/mAP50-95(B)": 0.39533
+      },
+      "loss_at_best_epoch": {
+        "train/box_loss": 1.11181,
+        "train/cls_loss": 0.82228,
+        "train/dfl_loss": 1.24556,
+        "val/box_loss": 1.65297,
+        "val/cls_loss": 1.16874,
+        "val/dfl_loss": 1.54749
+      },
+      "final_epoch_validation": {
+        "metrics/precision(B)": 0.73974,
+        "metrics/recall(B)": 0.71598,
+        "metrics/mAP50(B)": 0.74527,
+        "metrics/mAP50-95(B)": 0.39089
+      },
+      "possible_overfitting_indicator": true,
+      "artifacts": {
+        "best.pt": "runs/E4/weights/best.pt",
+        "last.pt": "runs/E4/weights/last.pt",
+        "results.csv": "runs/E4/results.csv",
+        "args.yaml": "runs/E4/args.yaml",
+        "effective_config.yaml": "runs/E4/effective_config.yaml",
+        "status.json": "runs/E4/status.json"
+      },
+      "best_checkpoint_validation": {
+        "checkpoint": "runs/E4/weights/best.pt",
+        "weights_finite": true,
+        "split": "val",
+        "precision": 0.733056846472404,
+        "recall": 0.7139775147873667,
+        "map50": 0.7480827434905813,
+        "map50_95": 0.39650023973886034,
+        "speed_ms_per_image": {
+          "preprocess": 0.27339305570758704,
+          "inference": 1.677421759571492,
+          "loss": 0.0002546296821458748,
+          "postprocess": 0.6026125004239105
+        }
+      },
+      "effective_config": {
+        "data": "configs/data.yaml",
+        "epochs": 100,
+        "patience": 20,
+        "batch": 16,
+        "imgsz": 320,
+        "optimizer": "AdamW",
+        "lr0": 0.001,
+        "lrf": 0.01,
+        "weight_decay": 0.0005,
+        "cos_lr": false,
+        "warmup_epochs": 3,
+        "seed": 42,
+        "deterministic": true,
+        "pretrained": true,
+        "multi_scale": false,
+        "close_mosaic": 0,
+        "hsv_h": 0.0,
+        "hsv_s": 0.0,
+        "hsv_v": 0.1,
+        "degrees": 5.0,
+        "translate": 0.05,
+        "scale": 0.1,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "fliplr": 0.5,
+        "flipud": 0.5,
+        "mosaic": 0.0,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "erasing": 0.0,
+        "bgr": 0.0
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "baseline": "E1",
+      "augmented": "E3",
+      "validation_metric_changes_percentage_points": {
+        "precision": 4.986263727770702,
+        "recall": 16.04159578267871,
+        "map50": 10.895255414230009,
+        "map50_95": 8.115182739675475
+      },
+      "unexpected_config_differences": []
+    },
+    {
+      "baseline": "E2",
+      "augmented": "E4",
+      "validation_metric_changes_percentage_points": {
+        "precision": 8.044288646790609,
+        "recall": 22.30294572022719,
+        "map50": 17.686446502488305,
+        "map50_95": 10.119833841775105
+      },
+      "unexpected_config_differences": []
+    }
+  ]
+}

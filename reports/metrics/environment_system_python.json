@@ -1,0 +1,47 @@
+{
+  "collected_at_utc": "2026-11-09T20:08:10.357843+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": {
+    "version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Nocomp\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+  },
+  "libraries": {
+    "torch": null,
+    "torchvision": null,
+    "ultralytics": null,
+    "pandas": null,
+    "matplotlib": null,
+    "seaborn": null,
+    "yaml": null
+  },
+  "pytorch": {
+    "available": false,
+    "cuda_available": false,
+    "devices": []
+  },
+  "nvidia_smi": {
+    "available": true,
+    "cuda_umd_version": "13.4",
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+        "memory_mib": "8188",
+        "driver_version": "617.42"
+      }
+    ]
+  },
+  "required_packages_missing": [
+    "torch",
+    "torchvision",
+    "ultralytics",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "yaml"
+  ],
+  "training_readiness": {
+    "gpu_acceleration_available": false,
+    "assessment": "An NVIDIA GPU is detected, but CUDA-enabled PyTorch is not available yet. Install the pinned environment and re-run this diagnostic."
+  }
+}

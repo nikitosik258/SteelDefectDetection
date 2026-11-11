@@ -1,0 +1,101 @@
+{
+  "generated_at_utc": "2026-11-10T15:04:25.394611+00:00",
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "total_vram_gib": 8.0,
+    "free_vram_gib_before_report": 7.92,
+    "torch": "2.7.1+cu128",
+    "torch_cuda": "12.8",
+    "ultralytics": "8.3.239",
+    "precision": "FP32",
+    "imgsz": 320,
+    "batch": 1,
+    "warmup_runs": 30,
+    "measured_runs": 100,
+    "input_image": "crazing_1.jpg",
+    "nms": {
+      "confidence": 0.25,
+      "iou": 0.7,
+      "max_det": 300
+    },
+    "execution": "sequential, one model at a time; CUDA synchronized around every measurement"
+  },
+  "models": [
+    {
+      "experiment": "E1",
+      "checkpoint": "runs/E1/weights/best.pt",
+      "parameters": 3006818,
+      "model_inference": {
+        "mean_ms": 5.373990000225604,
+        "median_ms": 5.1841999957105145,
+        "p95_ms": 6.784235016675665,
+        "std_ms": 0.7678766453190855,
+        "calculated_fps": 186.08147762798578
+      },
+      "end_to_end": {
+        "mean_ms": 7.973575999203604,
+        "median_ms": 7.706399992457591,
+        "p95_ms": 9.651059993484523,
+        "std_ms": 0.9503765130574323,
+        "calculated_fps": 125.41424325796599
+      }
+    },
+    {
+      "experiment": "E2",
+      "checkpoint": "runs/E2/weights/best.pt",
+      "parameters": 2583322,
+      "model_inference": {
+        "mean_ms": 7.355952000070829,
+        "median_ms": 7.105199998477474,
+        "p95_ms": 9.758270018210169,
+        "std_ms": 1.1597705187595726,
+        "calculated_fps": 135.9443346001131
+      },
+      "end_to_end": {
+        "mean_ms": 9.684636000019964,
+        "median_ms": 9.357450006064028,
+        "p95_ms": 12.059869986842386,
+        "std_ms": 1.13476324526794,
+        "calculated_fps": 103.2563330204603
+      }
+    },
+    {
+      "experiment": "E3",
+      "checkpoint": "runs/E3/weights/best.pt",
+      "parameters": 3006818,
+      "model_inference": {
+        "mean_ms": 5.465474000084214,
+        "median_ms": 5.220200007897802,
+        "p95_ms": 7.15471499133855,
+        "std_ms": 0.8224557977467666,
+        "calculated_fps": 182.96674725460073
+      },
+      "end_to_end": {
+        "mean_ms": 7.979420000046957,
+        "median_ms": 7.718699998804368,
+        "p95_ms": 9.580814998480491,
+        "std_ms": 0.999368446232538,
+        "calculated_fps": 125.32239185230445
+      }
+    },
+    {
+      "experiment": "E4",
+      "checkpoint": "runs/E4/weights/best.pt",
+      "parameters": 2583322,
+      "model_inference": {
+        "mean_ms": 7.53324199875351,
+        "median_ms": 7.1338499983539805,
+        "p95_ms": 10.151009990659077,
+        "std_ms": 1.4839715487086262,
+        "calculated_fps": 132.74497223976945
+      },
+      "end_to_end": {
+        "mean_ms": 9.930788001511246,
+        "median_ms": 9.563899991917424,
+        "p95_ms": 12.440664993482642,
+        "std_ms": 1.3983035492870934,
+        "calculated_fps": 100.69694367132016
+      }
+    }
+  ]
+}

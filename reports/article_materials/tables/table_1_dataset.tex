@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Статистика NEU-DET и разбиение.}
+\label{tab:dataset}
+\scriptsize
+\begin{tabular}{p{0.28\textwidth}rrp{0.30\textwidth}}
+\hline
+Набор & Изображения, шт. & Объекты, шт. & Назначение \\
+\hline
+Исходный канонический fold & 1800 & 4189 & VOC до очистки \\
+Train & 1223 & 2804 & обучение \\
+Validation & 216 & 521 & early stopping и выбор best.pt \\
+Test & 360 & 858 & однократная финальная оценка \\
+Итоговый processed & 1799 & 4183 & YOLO после очистки \\
+\hline
+\end{tabular}
+\end{table*}
