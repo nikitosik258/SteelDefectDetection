@@ -1,1 +1,0 @@
-<annotation><object><name>unknown</name><bndbox><xmin>1</xmin><ymin>1</ymin><xmax>5</xmax><ymax>5</ymax></bndbox></object><object><name>crazing</name><bndbox><xmin>8</xmin><ymin>8</ymin><xmax>2</xmax><ymax>2</ymax></bndbox></object><object><name>patches</name><bndbox><xmin>-1</xmin><ymin>1</ymin><xmax>30</xmax><ymax>5</ymax></bndbox></object></annotation>
