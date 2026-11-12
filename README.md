@@ -8,7 +8,7 @@
 
 ## Данные
 
-Использована detection-версия NEU-DET в Pascal VOC из [репозитория ETDNet](https://github.com/zht8506/ETDNet), архив `Neu_Det_5Flod_voc.zip`. Указанный ранее Kaggle-источник оказался classification-only и для детекции не использовался.
+Использована detection-версия NEU-DET в Pascal VOC из [репозитория ETDNet](https://github.com/zht8506/ETDNet), архив `Neu_Det_5Flod_voc.zip`.
 
 Классы YOLO: `0=crazing`, `1=inclusion`, `2=patches`, `3=pitted_surface`, `4=rolled-in_scale`, `5=scratches`.
 
