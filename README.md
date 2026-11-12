@@ -48,7 +48,7 @@ E3 имеет наилучшие `mAP@50:95` и fixed F1 в этом единс�
 
 ## Скорость инференса
 
-Измерения: NVIDIA GeForce RTX 4070 Laptop GPU (8 GiB), FP32, `imgsz=320`, batch=1, одно Test-изображение (`crazing_1.jpg`), 30 прогревов и 100 измерений. FPS = `1000 / mean latency`; это сравнительное измерение, а не production throughput.
+Измерения: NVIDIA GeForce RTX 4070 Laptop GPU (8 GiB), FP32, `imgsz=320`, batch=1, одно Test-изображение (`crazing_1.jpg`), 30 прогревов и 100 измерений. FPS = `1000 / mean latency`;
 
 | Эксперимент | Параметры | Forward, ms/image | End-to-end, ms/image | End-to-end FPS |
 |---|---:|---:|---:|---:|
